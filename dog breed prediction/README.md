@@ -1,6 +1,6 @@
 # Dog-Breed-Prediction
 A dog-breed classifier using Convolutional neural network from scratch which takes image of dog and predict their breed. It can predict three breeds scottish deerhound,
-maltese dog, beagle with an accuracy of ~86% and 150 Epochs
+maltese dog, beagle with an accuracy of ~86%
 
 Web-app designed using Streamlit
 
