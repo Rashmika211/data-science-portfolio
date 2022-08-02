@@ -1,0 +1,11 @@
+emoji==2.0.0
+matplotlib==3.5.2
+nltk==3.7
+numpy==1.23.1
+pandas==1.4.3
+seaborn==0.11.2
+stats==0.1.2a0
+stop_words==2018.7.23
+streamlit==1.11.1
+urlextract==1.6.0
+wordcloud==1.8.2.2
