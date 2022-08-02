@@ -95,13 +95,14 @@ def activity_heatmap(selected_user, df):
 # 0 => Neutral
 # 1 => Positive
 def sentiment_wordcloud(selected_user,df,k):
+    temp = df.copy()
     # Dimensions of wordcloud
-    wc = WordCloud(stopwords = stop_words,width=500,height=500,min_font_size=10,background_color='white')
+    wc = WordCloud(stopwords=stop_words,width=500,height=500,min_font_size=10,background_color='white')
 
-    df['Message_value'] = df['Message'][(df['sentiment'] == k).index]
+    temp['Message'] = temp['Message'][temp['sentiment'] == k]
 
     # Word cloud generated
-    df_wc = wc.generate(df['Message_value'].str.cat(sep=" "))
+    df_wc = wc.generate(temp['Message'].str.cat(sep=" "))
     return df_wc
 
 def percentage(df,k):
